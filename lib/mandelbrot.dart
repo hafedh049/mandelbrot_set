@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class MandelBrotSet extends StatelessWidget {
@@ -8,6 +10,8 @@ class MandelBrotSet extends StatelessWidget {
 }
 
 class MandelBrotPainter extends CustomPainter {
+  late final FragmentShader _shader;
+
   @override
   void paint(Canvas canvas, Size size) {
     // TODO: implement paint
