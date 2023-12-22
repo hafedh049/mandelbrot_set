@@ -12,6 +12,8 @@ class MandelBrotSet extends StatelessWidget {
 class MandelBrotPainter extends CustomPainter {
   late final FragmentShader _shader;
 
+  MandelBrotPainter();
+
   @override
   void paint(Canvas canvas, Size size) {
     // TODO: implement paint
