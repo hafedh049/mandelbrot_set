@@ -10,6 +10,8 @@ pubspec.lock
 # Directory created by dartdoc
 # If you don't generate documentation locally you can remove this line.
 doc/api/
+auto_commit.py
+windows/
 
 # dotenv environment variables file
 .env*
