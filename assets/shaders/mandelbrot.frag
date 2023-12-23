@@ -32,7 +32,7 @@ void main() {
 
     int i;
 
-    for(i = 0.; i < int(itr); i+=1) {
+    for(i = 0; i < int(itr); i+=1) {
         float x = (z.x * z.x - z.y * z.y) + c.x;
         float y = (z.y * z.x + z.x * z.y) + c.y;
 
