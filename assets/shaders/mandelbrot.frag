@@ -1,4 +1,4 @@
-#version 450 core
+#version 460 core
 
 uniform float screen_ratio;
 uniform vec2 screen_size;
