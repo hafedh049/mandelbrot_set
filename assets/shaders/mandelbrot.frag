@@ -4,7 +4,7 @@ uniform float screen_ratio;
 uniform vec2 screen_size;
 uniform vec2 center;
 uniform float zoom;
-uniform int itr;
+uniform float itr;
 
 out vec4 colorOut;
 
@@ -27,7 +27,7 @@ void main() {
     c.x += center.x;
     c.y += center.y;
 
-    int i = 100;
+    int i = 50;
 
     /*for(i = 0; i < itr; i) {
         float x = (z.x * z.x - z.y * z.y) + c.x;

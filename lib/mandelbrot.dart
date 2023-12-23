@@ -27,7 +27,7 @@ class MandelBrotPainter extends CustomPainter {
     shader.setFloat(2, MediaQuery.sizeOf(context).height);
     shader.setFloat(3, 0);
     shader.setFloat(4, 0);
-    shader.setFloat(5, .001);
+    shader.setFloat(5, .01);
     shader.setFloat(6, 100);
 
     canvas.drawRect(Rect.fromLTWH(0, 0, size.width, size.height), Paint()..shader = shader);
