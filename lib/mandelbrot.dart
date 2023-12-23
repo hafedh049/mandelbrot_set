@@ -16,12 +16,9 @@ class MandelBrotPainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    // TODO: implement paint
+    canvas.drawRect(rect, paint)
   }
 
   @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) {
-    // TODO: implement shouldRepaint
-    throw UnimplementedError();
-  }
+  bool shouldRepaint(MandelBrotPainter oldDelegate) => false;
 }
