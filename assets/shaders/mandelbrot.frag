@@ -29,7 +29,7 @@ void main() {
 
     int i;
 
-    for(i = 0; i < itr; i++) {
+    for(i = 0; i < itr; i) {
         float x = (z.x * z.x - z.y * z.y) + c.x;
         float y = (z.y * z.x + z.x * z.y) + c.y;
 
@@ -38,6 +38,7 @@ void main() {
         }
         z.x = x;
         z.y = y;
+        i++;
     }
 
     float t = float(i) / float(itr);
