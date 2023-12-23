@@ -24,10 +24,10 @@ class MandelBrotPainter extends CustomPainter {
     shader.setFloat(0, MediaQuery.sizeOf(context).aspectRatio);
     shader.setFloat(1, MediaQuery.sizeOf(context).width);
     shader.setFloat(2, MediaQuery.sizeOf(context).height);
-    shader.setFloat(3, MediaQuery.sizeOf(context).center(origin));
-    shader.setFloat(4, MediaQuery.sizeOf(context).aspectRatio);
-    shader.setFloat(5, MediaQuery.sizeOf(context).aspectRatio);
-    shader.setFloat(6, MediaQuery.sizeOf(context).aspectRatio);
+    shader.setFloat(3, 0);
+    shader.setFloat(4, 0);
+    shader.setFloat(5, .01);
+    shader.setFloat(6, 100);
 
     canvas.drawRect(
       Rect.fromLTWH(0, 0, size.width, size.height),
