@@ -1,19 +1,13 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_shaders/flutter_shaders.dart';
+import 'package:mandelbrot_set/globals.dart';
 
 class MandelBrotSet extends StatelessWidget {
   const MandelBrotSet({super.key});
 
   @override
-  Widget build(BuildContext context) => ShaderBuilder(
-        (BuildContext context, FragmentShader shader, Widget? child) {
-          print(2);
-          return CustomPaint(painter: MandelBrotPainter(shader: shader, context: context));
-        },
-        assetKey: 'assets/shaders/mandelbrot.frag',
-      );
+  Widget build(BuildContext context) => CustomPaint(painter: MandelBrotPainter(shader: shader.fragmentShader(), context: context));
 }
 
 class MandelBrotPainter extends CustomPainter {

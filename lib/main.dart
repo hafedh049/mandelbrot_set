@@ -1,7 +1,12 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
+import 'package:mandelbrot_set/globals.dart';
 import 'package:mandelbrot_set/mandelbrot.dart';
 
 Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  shader = await FragmentProgram.fromAsset("assets/shaders/mandelbrot.frag");
   runApp(const Main());
 }
 
