@@ -9,6 +9,7 @@ environment:
   sdk: ">=3.2.3 <4.0.0"
 
 dependencies:
+  bitsdojo_window: ^0.1.5
   flutter:
     sdk: flutter
 
@@ -24,7 +25,7 @@ flutter:
   uses-material-design: true
 
   shaders:
-    - assets/shaders/mandelbrot.frag
+    - assets/shaders/mandelbrots.frag
 
   assets:
     - assets/
