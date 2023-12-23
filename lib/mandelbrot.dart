@@ -36,5 +36,5 @@ class MandelBrotPainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(MandelBrotPainter oldDelegate) => false;
+  bool shouldRepaint(MandelBrotPainter oldDelegate) => true;
 }
