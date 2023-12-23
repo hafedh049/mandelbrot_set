@@ -1,6 +1,4 @@
-#version 410 core
-
-#include <flutter/runtime_effect.glsl>
+#version 450 core
 
 uniform float screen_ratio;
 uniform vec2 screen_size;
@@ -42,5 +40,5 @@ void main()
 
     float t = float(i) / float(itr);*/
 
-    colorOut = vec4(1) //map_to_color(float(t));
+    colorOut = vec4(1); //map_to_color(float(t));
 }
