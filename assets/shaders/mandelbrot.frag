@@ -20,7 +20,7 @@ vec4 map_to_color(float t) {
 }
 
 void main() {
-    vec2 z, c;
+    vec2 z = vec2(0,0), c = vec2(0,0);
     c.x = screen_ratio * (gl_FragCoord.x / screen_size.x - 0.5);
     c.y = (gl_FragCoord.y / screen_size.y - 0.5);
 
