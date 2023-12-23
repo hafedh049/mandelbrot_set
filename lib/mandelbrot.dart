@@ -10,10 +10,9 @@ class MandelBrotSet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => ShaderBuilder(
-        builder: (context) {
-          return CustomPaint(painter: MandelBrotPainter());
-        },
-        assetKey: '',
+        (BuildContext context, FragmentShader shader, p2) {},
+        assetKey: 'assets/shaders/mandelbrot.frag',
+        child: CustomPaint(painter: MandelBrotPainter()),
       );
 }
 
