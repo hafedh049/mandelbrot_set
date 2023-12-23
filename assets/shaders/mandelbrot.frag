@@ -1,4 +1,4 @@
-#version 460 core
+#version 450 core
 
 uniform float screen_ratio;
 uniform vec2 screen_size;
@@ -43,5 +43,5 @@ void main() {
 
     float t = float(i) / float(itr);
 
-    colorOut = map_to_color(float(t));
+    colorOut = vec4(1);// map_to_color(float(t));
 }
