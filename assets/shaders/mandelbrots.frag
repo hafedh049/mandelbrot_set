@@ -42,11 +42,6 @@ void main()
         j = i;
     }
 
-    if(j == itr ){
-        colorOut = vec4(28.0/255.0,27.0/255.0,31.0/255.0,1.0)
-    }
-    else {
-        float t = float(j) / float(itr);
-        colorOut = map_to_color(float(t));
-    }
+    float t = float(j) / float(itr);
+    colorOut = map_to_color(float(t));
 }
