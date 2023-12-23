@@ -1,4 +1,6 @@
-#version 410
+#version 460 core
+
+#include <flutter/runtime_effect.glsl>
 
 out vec4 colorOut;
 uniform double screen_ratio;
