@@ -24,7 +24,7 @@ flutter:
   uses-material-design: true
 
   shaders:
-    - assets/shaders/mandelbrog.frag
+    - assets/shaders/mandelbrot.frag
 
   assets:
     - assets/
