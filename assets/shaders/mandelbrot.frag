@@ -30,9 +30,9 @@ void main() {
     c.x += center.x;
     c.y += center.y;
 
-    float i = 0;
+    float i;
 
-    for( i < itr; i++) {
+    for(i = 0; i < itr; i++) {
         float x = (z.x * z.x - z.y * z.y) + c.x;
         float y = (z.y * z.x + z.x * z.y) + c.y;
 
