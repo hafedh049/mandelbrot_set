@@ -16,10 +16,14 @@ class MandelBrotSet extends StatelessWidget {
 }
 
 class MandelBrotPainter extends CustomPainter {
-  MandelBrotPainter({required this.shader});
+  MandelBrotPainter({required this.context, required this.shader});
   final FragmentShader shader;
+  final BuildContext context;
   @override
   void paint(Canvas canvas, Size size) {
+    shader.setFloat(
+      0,
+    );
     canvas.drawRect(
       Rect.fromLTWH(0, 0, size.width, size.height),
       Paint()..shader = shader,

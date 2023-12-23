@@ -2,10 +2,10 @@
 
 #include <flutter/runtime_effect.glsl>
 
-uniform double screen_ratio;
-uniform dvec2 screen_size;
-uniform dvec2 center;
-uniform double zoom;
+uniform float screen_ratio;
+uniform vec2 screen_size;
+uniform vec2 center;
+uniform float zoom;
 uniform int itr;
 
 out vec4 colorOut;
