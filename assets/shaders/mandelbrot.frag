@@ -1,5 +1,7 @@
 #version 460 core
 
+#include <flutter/runtime_effect.glsl>
+
 uniform float screen_ratio;
 uniform vec2 screen_size;
 uniform vec2 center;
@@ -27,9 +29,9 @@ void main() {
     c.x += center.x;
     c.y += center.y;
 
-    int i = 50;
+    int i;
 
-    /*for(i = 0; i < itr; i) {
+    for(i = 0; i < itr; i) {
         float x = (z.x * z.x - z.y * z.y) + c.x;
         float y = (z.y * z.x + z.x * z.y) + c.y;
 
@@ -39,7 +41,7 @@ void main() {
         z.x = x;
         z.y = y;
         i++;
-    }*/
+    }
 
     float t = float(i) / float(itr);
 
