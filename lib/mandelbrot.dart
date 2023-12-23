@@ -36,6 +36,6 @@ class MandelBrotPainter extends CustomPainter {
   @override
   bool shouldRepaint(MandelBrotPainter oldDelegate) {
     print(1);
-    return true;
+    return shader != oldDelegate.shader;
   }
 }
