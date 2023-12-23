@@ -9,6 +9,7 @@ class MandelBrotSet extends StatelessWidget {
   @override
   Widget build(BuildContext context) => ShaderBuilder(
         (BuildContext context, FragmentShader shader, Widget? child) {
+          print(2);
           return CustomPaint(painter: MandelBrotPainter(shader: shader, context: context));
         },
         assetKey: 'assets/shaders/mandelbrot.frag',
@@ -26,7 +27,7 @@ class MandelBrotPainter extends CustomPainter {
     shader.setFloat(2, MediaQuery.sizeOf(context).height);
     shader.setFloat(3, 0);
     shader.setFloat(4, 0);
-    shader.setFloat(5, .01);
+    shader.setFloat(5, .001);
     shader.setFloat(6, 100);
 
     canvas.drawRect(
