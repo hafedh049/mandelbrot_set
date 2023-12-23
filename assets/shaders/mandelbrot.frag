@@ -2,12 +2,13 @@
 
 #include <flutter/runtime_effect.glsl>
 
-out vec4 colorOut;
 uniform double screen_ratio;
 uniform dvec2 screen_size;
 uniform dvec2 center;
 uniform double zoom;
 uniform int itr;
+
+out vec4 colorOut;
 
 vec4 map_to_color(float t) {
     float r = 9.0 * (1.0 - t) * t * t * t;
