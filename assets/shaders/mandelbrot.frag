@@ -6,7 +6,7 @@ uniform float screen_ratio;
 uniform vec2 screen_size;
 uniform float zoom;
 
-const float itr = 100;
+const float itr = 100.0;
 const vec2 center = vec2(0,0);
 
 out vec4 colorOut;
@@ -32,7 +32,7 @@ void main() {
 
     float i;
 
-    for(i = 0; i < itr; i++) {
+    for(i = 0.0; i < itr; i+=1.0) {
         float x = (z.x * z.x - z.y * z.y) + c.x;
         float y = (z.y * z.x + z.x * z.y) + c.y;
 
