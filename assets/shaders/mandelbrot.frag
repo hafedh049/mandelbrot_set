@@ -30,9 +30,9 @@ void main() {
     c.x += center.x;
     c.y += center.y;
 
-    float i;
+    int i;
 
-    for(i = 0.0; i < itr; i+=1.0) {
+    for(i = 0.; i < int(itr); i+=1) {
         float x = (z.x * z.x - z.y * z.y) + c.x;
         float y = (z.y * z.x + z.x * z.y) + c.y;
 
@@ -43,7 +43,7 @@ void main() {
         z.y = y;
     }
 
-    float t = i / itr;
+    float t = float(i) / itr;
 
-    colorOut = map_to_color(float(t));
+    colorOut = map_to_color(t);
 }
