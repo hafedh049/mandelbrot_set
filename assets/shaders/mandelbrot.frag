@@ -6,7 +6,7 @@ uniform float screen_ratio;
 uniform vec2 screen_size;
 uniform vec2 center;
 uniform float zoom;
-const float itr 100;
+const itr 100;
 
 out vec4 colorOut;
 
@@ -43,7 +43,7 @@ void main() {
         i++;
     }*/
 
-    float t = float(i) / float(itr);
+    float t = float(100) / float(itr);
 
     colorOut = map_to_color(float(t));
 }
